@@ -1,0 +1,8 @@
+create table sales_orders (
+	order_id int,
+	item_num int,
+	material_num varchar(20) not null,
+	item_val numeric(7,2) not null,
+	order_dt date,
+	constraint pk_id primary key(order_id, item_num)
+);
