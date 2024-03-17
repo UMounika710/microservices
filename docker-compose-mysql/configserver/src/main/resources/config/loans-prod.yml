@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to ZettaBank loans related prod APIs "
+  contactDetails:
+    name: "Villiam - Product Owner"
+    email: "villiam@zettabank.com"
+    #email: "{cipher}b50bbbb03ffaced8b9b59056d13aaa7b5bb434b7f22ca6504756772385950c671d56a0a57c0b1e1c88bbdee13b233372"
+  onCallSupport:
+    - (453) 392-4829
+    - (236) 203-0384
+    
