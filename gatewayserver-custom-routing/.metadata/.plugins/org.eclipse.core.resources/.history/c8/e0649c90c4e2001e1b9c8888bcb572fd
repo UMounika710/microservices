@@ -1,0 +1,17 @@
+package com.zettamine.gatewayserver.filters;
+
+import org.springframework.http.HttpHeaders;
+
+public class FilterUtility {
+	public static final String CORRELATION_ID = "zettabank-correlation-id";
+	
+	public String getCorrelationId(HttpHeaders requestHeaders) {
+		
+		if(requestHeaders.get(CORRELATION_ID) != null) {
+			return requestHeaders.get(CORRELATION_ID).stream().findFirst().get();
+		}else {
+			return null;
+		}
+	}
+
+}

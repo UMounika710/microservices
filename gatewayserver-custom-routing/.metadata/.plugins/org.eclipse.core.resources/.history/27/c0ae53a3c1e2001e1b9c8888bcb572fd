@@ -1,0 +1,5 @@
+package com.zettamine.gatewayserver.filters;
+
+public class FilterUtility {
+
+}
